@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: sans-serif;
-  margin: 3rem;
-  background-color: #dfdfdf;
+  /* margin: 3rem; */
+  /* background-color: #dfdfdf; */
 }
 
 h1,
@@ -44,6 +49,7 @@ h2 {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   width: 20rem;
+  margin: 1rem;
 }
 
 .actions {
