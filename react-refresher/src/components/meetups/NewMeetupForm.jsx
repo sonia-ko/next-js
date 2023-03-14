@@ -18,7 +18,7 @@ function NewMeetupForm({ onAddMeetup }) {
     const meetupData = {
       title: enteredTitle,
       image: enteredImage,
-      address: enteredDescription,
+      address: enteredAddress,
       desctiption: enteredDescription,
     };
 

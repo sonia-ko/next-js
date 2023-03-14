@@ -6,16 +6,13 @@ function NewMeetupPage() {
   const navigate = useNavigate();
 
   function addMeetupHandler(meetupData) {
-    fetch(
-      "https://react-getting-started-48dec-default-rtdb.firebaseio.com/meetups.json",
-      {
-        method: "POST",
-        body: JSON.stringify(meetupData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    ).then(() => {
+    fetch("https://meetups-ab3c3-default-rtdb.firebaseio.com/meetups.json", {
+      method: "POST",
+      body: JSON.stringify(meetupData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then(() => {
       navigate("/");
     });
   }
