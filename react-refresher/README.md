@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React meetups - test project
 
 This project's demo can be viewed [here](https://react-meetups-demo.netlify.app/).
 
