@@ -7,7 +7,7 @@ function HomePage({ products }) {
     <ul>
       {products.map((product) => {
         return (
-          <Link key={product.id} href={`/${product.id}`}>
+          <Link key={product.id} href={`/products/${product.id}`}>
             <li> {product.title}</li>
           </Link>
         );
@@ -17,7 +17,6 @@ function HomePage({ products }) {
 }
 
 export async function getStaticProps(context) {
-  console.log("Re-generating");
   const filePath = path.join(process.cwd(), "data", "dummy-backend.json");
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData);

@@ -5,7 +5,6 @@ function MeetupList({ items }) {
   return (
     <ul className={classes.list}>
       {items.map((item) => {
-        console.log(item);
         return (
           <MeetupItem
             id={item.id}

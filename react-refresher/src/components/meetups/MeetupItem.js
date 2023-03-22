@@ -7,7 +7,6 @@ function MeetupItem({ title, id, image, address, description }) {
   const favoritesContext = useContext(FavoritesContext);
 
   const isFavorite = favoritesContext.itemIsFavorite(id);
-  console.log(isFavorite);
 
   const toggleFavoriteStatusHandler = () => {
     if (isFavorite) {

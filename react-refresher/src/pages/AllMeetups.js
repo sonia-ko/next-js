@@ -22,7 +22,6 @@ function AllMeetupsPage() {
         }
         setIsLoading(false);
         setMeetups(meetups);
-        console.log(meetups);
       });
   }, []);
 

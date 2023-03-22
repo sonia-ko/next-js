@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import classes from "./event-item.module.css";
-import Button from "../UI/button";
+import Button from "../UI/Button";
 import DateIcon from "../icons/date-icon";
 import AddressIcon from "../icons/address-icon";
 import ArrowRightIcon from "../icons/arrow-right-icon";
@@ -18,7 +19,7 @@ function EventItem({ title, image, date, location, id }) {
 
   return (
     <li className={classes.item}>
-      <img src={"/" + image} alt={title} />
+      <Image height={160} width={250} src={"/" + image} alt={title} />
       <div className={classes.content}>
         <div className={classes.summary}>
           <h2>{title}</h2>
