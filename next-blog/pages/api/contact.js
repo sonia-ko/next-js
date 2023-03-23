@@ -1,5 +1,4 @@
 import { MongoClient } from "mongodb";
-
 async function handler(req, res) {
   if (req.method === "POST") {
     const { email, name, message } = req.body;
@@ -25,10 +24,9 @@ async function handler(req, res) {
       message,
     };
 
+    const connectionString = `mongodb+srv://${process.env.mongodb_un}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.gi30vbe.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
     try {
-      const client = await MongoClient.connect(
-        "mongodb+srv://soniakozitskaya:Y2kcR5rlFwnIqVRd@cluster0.gi30vbe.mongodb.net/my-blog?retryWrites=true&w=majority"
-      );
+      const client = await MongoClient.connect(connectionString);
 
       const db = client.db();
 
