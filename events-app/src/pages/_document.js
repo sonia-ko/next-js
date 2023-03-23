@@ -13,6 +13,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 //   )
 // }
 
+//extra html elements can be used by React portals
 class MyDocument extends Document {
   render() {
     return (
