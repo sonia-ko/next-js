@@ -24,7 +24,11 @@ async function handler(req, res) {
       message,
     };
 
-    const connectionString = `mongodb+srv://${process.env.mongodb_un}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.gi30vbe.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
+    // const connectionString = `mongodb+srv://${process.env.mongodb_un}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.gi30vbe.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
+
+    const connectionString =
+      "mongodb+srv://soniakozitskaya:<password>@cluster0.gi30vbe.mongodb.net/?retryWrites=true&w=majority";
+
     try {
       const client = await MongoClient.connect(connectionString);
 
