@@ -28,3 +28,7 @@ Here are the projects that I completed during Next JS course: <br>
 ## 7. Blog project:
 
 ### [Demo](https://next-js-ecru-three.vercel.app/)
+
+## 8. Auth project
+
+### [Demo](https://auth-project-53sad8v6e-sonia-ko.vercel.app/)
