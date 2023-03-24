@@ -4,10 +4,18 @@ Data-Fetching project can be viewed [here](https://github.com/sonia-ko/next-js/t
 React-Refresher can be viewed [here](https://github.com/sonia-ko/next-js/tree/main/react-refresher) <br>
 Events-App can be viewed [here](https://github.com/sonia-ko/next-js/tree/main/events-app)
 
+## React refresher:
+
+### [Demo](https://react-meetups-demo.netlify.app/)
+
 ## Blog project:
 
-[Demo](https://next-js-ecru-three.vercel.app/)
+### [Demo](https://next-js-ecru-three.vercel.app/)
 
-## Events App (advanced version)
+## API routes
 
-[Demo](https://events-project-eight.vercel.app/)
+### [Demo](https://events-project-eight.vercel.app/)
+
+## Events App:
+
+### [Demo of advanced version](https://events-project-eight.vercel.app/)
