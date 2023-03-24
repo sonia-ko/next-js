@@ -1,19 +1,21 @@
 import AuthForm from "../components/auth/auth-form";
 import { useEffect } from "react";
 import { getSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 function AuthPage() {
+  const router = useRouter();
+
   useEffect(() => {
     getSession().then((session) => {
-      console.log(session);
       if (session !== undefined) {
       }
 
       if (session?.user) {
-        console.log("logged in");
+        router.replace("/");
       }
     });
-  });
+  }, []);
   return <AuthForm />;
 }
 
